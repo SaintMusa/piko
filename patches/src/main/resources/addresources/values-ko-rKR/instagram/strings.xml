@@ -120,8 +120,6 @@
     <string name="piko_friendship_status">관계 상태</string>
     <string name="piko_follow_list_non_follower_badge">팔로잉 목록에 팔로워가 아닌 계정 표시</string>
     <string name="piko_follow_list_non_follower_badge_desc">내가 팔로우하는 목록에서 나를 맞팔로우하지 않는 계정 행에 배지를 추가합니다</string>
-    <string name="piko_resume_reels_after_scrolling">스크롤 후 릴스 이어보기</string>
-    <string name="piko_resume_reels_after_scrolling_desc">스크롤해서 다른 콘텐츠를 본 뒤 다시 돌아왔을 때, 이전에 보던 지점부터 릴스를 이어서 재생합니다</string>
     <string name="piko_improve_image_viewing">이미지 보기 개선</string>
     <string name="piko_improve_image_viewing_desc">서버에서 최대 해상도의 이미지를 가져옵니다\n\n성능이 저하되거나 앱의 데이터 크기가 증가할 수 있으며, 앱이 이전 레이아웃으로 전환될 수도 있습니다</string>
     <string name="piko_copy_comment">댓글 복사 버튼 추가</string>
