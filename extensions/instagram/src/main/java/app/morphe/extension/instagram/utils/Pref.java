@@ -146,6 +146,10 @@ public class Pref {
         return SharedPref.getBooleanPref(Settings.RESUME_REELS_AFTER_SCROLLING);
     }
 
+    public static boolean unlockReelsSorting() {
+        return SharedPref.getBooleanPref(Settings.UNLOCK_REELS_SORTING);
+    }
+
     public static boolean disableVideoAutoplay() {
         return SharedPref.getBooleanPref(Settings.DISABLE_VIDEO_AUTOPLAY);
     }
