@@ -221,6 +221,8 @@ public class SettingsStatus {
     public static void followListNonFollowerBadge() { followListNonFollowerBadge = true; }
     public static boolean resumeReelsAfterScrolling = false;
     public static void resumeReelsAfterScrolling() { resumeReelsAfterScrolling = true; }
+    public static boolean unlockReelsSorting = false;
+    public static void unlockReelsSorting() { unlockReelsSorting = true; }
     public static boolean improveImageViewing = false;
     public static void improveImageViewing() {
         improveImageViewing = true;
@@ -246,6 +248,9 @@ public class SettingsStatus {
     }
     public static boolean postsSection() {
         return moreOptionsOnPost || improveImageViewing || copyCommentButton;
+    }
+    public static boolean reelsSection() {
+        return resumeReelsAfterScrolling || unlockReelsSorting;
     }
 
     //Font section.
@@ -323,6 +328,7 @@ public class SettingsStatus {
         FLAGS.put(str("piko_hide_share_button"), SettingsStatus.hideShareButton);
         FLAGS.put(str("piko_improve_image_viewing"),SettingsStatus.improveImageViewing);
         FLAGS.put(str("piko_resume_reels_after_scrolling"), SettingsStatus.resumeReelsAfterScrolling);
+        FLAGS.put(str("piko_unlock_reels_sorting"), SettingsStatus.unlockReelsSorting);
         FLAGS.put(str("piko_unlimited_replays"),SettingsStatus.unlimitedReplaysOnEphemeralMedia);
         FLAGS.put(str("piko_disable_disappearing_messages_gesture"), SettingsStatus.disableDisappearingMessagesGesture);
         FLAGS.put(str("piko_send_keyboard_gifs"), SettingsStatus.sendKeyboardGifs);

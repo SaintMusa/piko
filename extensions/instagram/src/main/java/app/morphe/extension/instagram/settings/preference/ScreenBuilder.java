@@ -860,6 +860,13 @@ public class ScreenBuilder {
                     Settings.RESUME_REELS_AFTER_SCROLLING
             ));
         }
+        if (SettingsStatus.unlockReelsSorting) {
+            addPreference(helper.switchPreference(
+                    str("piko_unlock_reels_sorting"),
+                    str("piko_unlock_reels_sorting_desc"),
+                    Settings.UNLOCK_REELS_SORTING
+            ));
+        }
     }
 
     public void buildInstantsSection() {
@@ -1300,7 +1307,7 @@ public class ScreenBuilder {
             );
         }
 
-        if (SettingsStatus.resumeReelsAfterScrolling){
+        if (SettingsStatus.reelsSection()){
             addPreference(
                     helper.categoryPreference(
                             str("piko_navigation_tab_reels"),

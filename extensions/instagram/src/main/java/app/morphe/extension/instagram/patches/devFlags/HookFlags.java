@@ -51,6 +51,13 @@ public class HookFlags {
 //        BOOL_FLAGS.put("80654", false); //ig_meta_ai_cdd_reels_viewer
     }
 
+    private static void reelsSortingFlags() {
+        if (Pref.unlockReelsSorting()) {
+            BOOL_FLAGS.put("78393::0", true); //profile Reels sorting viewer check
+            BOOL_FLAGS.put("78393::3", false); //profile Reels sorting kill switch
+        }
+    }
+
     private static void profileActionBarFlags() {
         Set<String> pref = Pref.userProfileActionBarButtons();
         if (!pref.equals(Set.of(Constants.AB_CREATE))) {
